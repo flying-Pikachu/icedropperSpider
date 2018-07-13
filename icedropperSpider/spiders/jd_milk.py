@@ -4,7 +4,6 @@ from scrapy.spiders import Spider
 from scrapy.selector import Selector
 import scrapy
 import json
-
 from icedropperSpider.items import goodsItem
 
 

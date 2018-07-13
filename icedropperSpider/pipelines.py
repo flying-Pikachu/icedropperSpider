@@ -9,7 +9,7 @@ from scrapy.exporters import CsvItemExporter
 
 class IcedropperspiderPipeline(object):
     def open_spider(self, spider):
-        self.file = open("/Users/xuzhipeng/Documents/programming/python/icedropperSpider/enrolldata.csv", "wb")
+        self.file = open("/Users/xuzhipeng/Documents/programming/python/icedropperSpider/merchantInf.csv", "wb")
         self.exporter = CsvItemExporter(self.file,fields_to_export=["ID", "name", "shop_name", "price", "comment_num", "link"])
         self.exporter.start_exporting()
 
