@@ -6,9 +6,13 @@
 # http://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy import Item, Field
 
-
-class IcedropperspiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+#
+class goodsItem(scrapy.Item):
+    link = Field()          # merchant link
+    ID = Field()            # merchant ID
+    name = Field()          # merchant name
+    comment_num = Field()   # the number of the comment people
+    shop_name = Field()     # the name of the shop
+    price = Field()         # the price of the merchant
